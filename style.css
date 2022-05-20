@@ -101,18 +101,35 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation: spin 1s linear reverse infinite;
+    animation: spin1 1s reverse linear infinite;
 }
 
-@keyframes spin {
+@keyframes spin1 {
     100% {
         transform: rotate(360deg);
     }
 }
 
-
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    animation: spin2 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .ex-12-button,
