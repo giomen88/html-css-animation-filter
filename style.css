@@ -101,7 +101,15 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear reverse infinite;
 }
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .ex-11-icon {
     font-size: 60px;
