@@ -90,6 +90,13 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 1s linear, border-radius 1s linear, transform 1s linear;
+}
+
+.ex-9-img:hover {
+    filter: sepia(80%);
+    border-radius: 20px;
+    transform: scale(1.5);
 }
 
 .ex-10-icon {
